@@ -14,7 +14,7 @@ get_os_distribution(){
 }
 
 require(){
-    if [ ${OS} == "ubuntu"] ; then
+    if [ ${OS} == "ubuntu" ] ; then
         apt update
         apt install git -y
         apt install build-essential libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl libbz2-dev libreadline-dev -y
