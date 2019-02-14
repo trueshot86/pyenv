@@ -44,6 +44,7 @@ set_up(){
 }
 
 main(){
+    get_os_distribution
     require
     get_source
     set_up
