@@ -29,7 +29,7 @@ get_source(){
 }
 
 set_up(){
-    if [ ${OS} == "ubuntu"] ; then
+    if [ ${OS} == "ubuntu" ] ; then
         echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.profile
         echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile
         echo 'eval "$(pyenv init -)"' >> ~/.profile
