@@ -34,12 +34,13 @@ set_up(){
         echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile
         echo 'eval "$(pyenv init -)"' >> ~/.profile
         source ~/.profile
-        echo "source ~/.profile"
+        echo "Dont't forget to do source ~/.profile"
     elif [ ${OS} == "centos" ] ; then
         echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
         echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
         echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
         source ~/.bash_profile
+        echo "Dont't forget to do source ~/.bash_profile"
     fi
 }
 
