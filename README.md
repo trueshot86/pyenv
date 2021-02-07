@@ -30,3 +30,20 @@ $ ./install.sh
 
 - pyenv versions
   - show list of installed python version.
+
+
+
+## tips for tkinter.
+# 一旦ネイティブ環境に切り替える
+pyenv global system
+ 
+# 対象の環境を削除する
+pyenv uninstall 3.X.X
+ 
+# 必要なものをインストールする
+sudo apt-get install python3-tk
+sudo apt install tk-dev
+ 
+# 再度環境をインストールする
+pyenv install 3.X.X
+pyenv global 3.X.X
